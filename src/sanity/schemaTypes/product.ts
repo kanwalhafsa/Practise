@@ -1,3 +1,5 @@
+
+
 export const productSchema = {
     name: 'product',
     title: 'Product',
@@ -7,6 +9,14 @@ export const productSchema = {
         name: 'productName',
         title: 'Product Name',
         type: 'string',
+      },
+      {
+        name: 'slug',
+        title: "Slug",
+        type: 'slug',
+        options:{
+          source:"productName"
+        }
       },
       {
         name: 'category',

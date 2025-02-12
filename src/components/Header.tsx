@@ -26,7 +26,7 @@ export default function Header  ()  {
     <nav>
       <ul className="flex items-center space-x-3 text-black text-[11px] font-medium">
         <li>
-          <Link href="#">Find a Store</Link>
+          <Link href="/store">Find a Store</Link>
         </li>
         <span className="h-[14px] w-px bg-gray-400" />
         <li>
@@ -59,19 +59,19 @@ export default function Header  ()  {
 
         {/* Navigation Links (hidden on mobile) */}
         <nav className="hidden md:flex space-x-6 items-center font-medium">
-        <a href="/products" className="text-black hover:underline">
-            Products
+        <a href="/shop" className="text-black hover:underline">
+            New & Features
           </a>
-          <a href="#" className="text-black hover:underline">
+          <a href="/men" className="text-black hover:underline">
             Men
           </a>
-          <a href="#" className="text-black hover:underline">
+          <a href="/women" className="text-black hover:underline">
             Women
           </a>
-          <a href="#" className="text-black hover:underline">
+          <a href="/kids" className="text-black hover:underline">
             Kids
           </a>
-          <a href="/shop" className="text-black hover:underline">
+          <a href="/shopAirMax" className="text-black hover:underline">
             SNKRS
           </a>
         </nav>
@@ -89,9 +89,9 @@ export default function Header  ()  {
           </div>
 
           {/* Icons */}
-          <FaRegHeart className="text-black text-lg" />
+          <Link href="/wishlist"><FaRegHeart className="text-black text-lg" /></Link>
           {/* <Image src={Bag} alt="Bag Icon" className="w-6 h-6" /> */}
-          <Link href="/cart"><IoBagOutline className="text-black "/></Link> 
+          <Link href="/addtoCart"><IoBagOutline className="text-black "/></Link> 
         </div>
         {/* Mobile Menu (visible only on small screens) */}
         <button className="md:hidden text-black text-lg">
@@ -102,8 +102,8 @@ export default function Header  ()  {
 
       {/* Mobile Navigation Drawer */}
       <div className="md:hidden bg-white w-full px-4 py-3 hidden" id="mobile-menu">
-        <a href="/products" className="block text-black py-1 hover:underline">
-          Products
+        <a href="#" className="block text-black py-1 hover:underline">
+          New & Features
         </a>
         <a href="#" className="block text-black py-1 hover:underline">
           Men
